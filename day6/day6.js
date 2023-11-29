@@ -96,3 +96,13 @@ let  message1  =  'The  vessel  \'Mars\'  called  at  the  port.';
  console.log(personalContact);
  console.log(personalContact.split(' '));
  console.log(personalContact.split(" "));
+ console.log("\n"); //for new line
+
+ //typeof null as an object
+ let  someResource;
+ console.log(someResource);  //  ->  undefined
+ console.log(typeof  someResource);  //  ->  undefined
+  
+ someResource  =  null;
+ console.log(someResource);  //  ->  null
+ console.log(typeof  someResource);  //  ->  object
