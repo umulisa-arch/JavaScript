@@ -10,6 +10,7 @@ let  isDataValid  =  true;
  console.log(typeof  false);  //  ->  boolean
  console.log(isDataValid);  //  ->  true
 console.log(typeof  isDataValid);  //  ->  boolean
+console.log("\n")
 
 //numbers
  const  year  =  1991;
@@ -35,6 +36,7 @@ console.log(typeof  isDataValid);  //  ->  boolean
  let  y  =  123e-5;
  console.log(x);  //  ->  9000
  console.log(y);  //  ->  0.00123
+ console.log("\n");
 
 
 //special values
@@ -50,6 +52,7 @@ console.log(typeof  isDataValid);  //  ->  boolean
  let  n  =  s  *  10;
  console.log(n);  //  ->  NaN
  console.log(typeof  n);  //  ->  number
+ console.log("\n");
 
  //bigInt
  let  big  =  1234567890000000000000n;
@@ -61,3 +64,35 @@ console.log(typeof  isDataValid);  //  ->  boolean
  console.log(big2);  //  ->  1n
 console.log(25n  /  4n);  //  ->  1n
 console.log(typeof big2);
+console.log("\n");
+
+//string
+let  country  =  "Malawi";
+ let  continent  =  'Africa';
+   
+ console.log(country);  //  ->  Malawi
+ console.log(typeof  country);  //  ->  string
+ console.log(continent);  //  ->  Africa
+console.log(typeof  continent);  //  ->  string
+
+
+let  message1  =  'The  vessel  \'Mars\'  called  at  the  port.';
+ let  message2  =  "Cyclone  \"Cilida\"  to  pass  close  to  Mauritius.";
+  
+ console.log(message1);  //  ->  The  vessel  'Mars'  called  at  the  port.
+ console.log(message2);  //  ->  Cyclone  "Cilida"  to  pass  close  to  Mauritius.
+  
+ let  path  =  "C:\\Windows";
+ console.log(path);  //  ->  C:\Windows
+//use of slice method
+ let name = "Marie josee";
+ let value = name.slice(4,7);
+ console.log(value);
+ console.log("\n");
+
+ //use of split method
+ 
+ let personalContact = "Agnes RUKUNDO 1998";
+ console.log(personalContact);
+ console.log(personalContact.split(' '));
+ console.log(personalContact.split(" "));
