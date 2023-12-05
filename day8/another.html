@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Submit | Reset</title>
 </head>
 <body>
-    
-   <input id="myId" type="text" name="" id=""> 
-   <button onclick="console.log(document.getElementById('myId').value)">Get text</button>
+    <form id = "myform">
+  <input id="myId" type="text" > 
+   <button type="button" onclick="Reset()">Get text</button>
+   
+</form>
+   <script>
+ function Reset(){
+        var input = document.getElementById('myId');
+
+        var inputvalue = input.value;
+
+
+        console.log(inputvalue);
+
+        input.value = '';
+ }
+   </script>
 </body>
 </html>
