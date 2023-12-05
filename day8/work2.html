@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Disappearing Alert</title>
+</head>
+<body>
+  <button onclick="showAlert()">Submit</button>
+
+  <script>
+    function showAlert() {
+      // Show alert message
+      alert("This message will disappear in 3 seconds.");
+
+      // Hide the alert after 3 seconds (3000 milliseconds)
+      setTimeout(function(){
+        var alertBox = document.querySelector(".alert");
+        alertBox.style.display = '';
+      }, 300);
+    }
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Disappearing Alert</title>
+  <style>
+    .alert {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px;
+      background-color: #754845;
+      color: white;
+      border-radius: 5px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showAlert()">Submit</button>
+
+  <div class="alert" id="myAlert">
+    This message will disappear in 3 seconds.
+  </div>
+
+  <script>
+    function showAlert() {
+      var alertBox = document.getElementById("myAlert");
+      alertBox.style.display = "block";
+
+      setTimeout(function(){
+        alertBox.style.display = "none";
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
