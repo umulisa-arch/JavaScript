@@ -1,26 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Auto Disappearing Alert</title>
-</head>
-<body>
-  <button onclick="showAlert()">Submit</button>
-
-  <script>
-    function showAlert() {
-      // Show alert message
-      alert("This message will disappear in 3 seconds.");
-
-      // Hide the alert after 3 seconds (3000 milliseconds)
-      setTimeout(function(){
-        var alertBox = document.querySelector(".alert");
-        alertBox.style.display = '';
-      }, 300);
-    }
-  </script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,10 +10,10 @@
       left: 50%;
       transform: translateX(-50%);
       padding: 15px;
-      background-color: #754845;
+      background-color: #54a008;
       color: white;
       border-radius: 5px;
-      z-index: 9999;
+      z-index: 999;
     }
   </style>
 </head>
@@ -44,7 +21,7 @@
   <button onclick="showAlert()">Submit</button>
 
   <div class="alert" id="myAlert">
-    This message will disappear in 3 seconds.
+   Data submitted successfuly
   </div>
 
   <script>

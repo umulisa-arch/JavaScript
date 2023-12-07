@@ -30,3 +30,8 @@ if (isOrderValid && addInsurance && !hasPromoCode) {
  } else {
  console.log("Cannot order if under 21");
 }
+
+//conditional operator
+let price = 10;
+ let shippingCost2 = price > 50 ? 0 : 5;
+ console.log(`price = ${price}, shipping = ${shippingCost2}`); // -> price = 10, shipping = 5
