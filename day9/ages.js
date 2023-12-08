@@ -9,3 +9,5 @@ for (let i = 0; i < numberOfStudents; i++) {
 let averageAge = totalAges / numberOfStudents;
 
 console.log("Average age of students: " + averageAge);
+
+//second way
