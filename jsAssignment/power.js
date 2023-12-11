@@ -6,5 +6,5 @@ if (!isNaN(base) && !isNaN(exponent)) {
     
     console.log(base +" power "+exponent+ " is: "+result);
 } else {
-    console.log("Please enter e base and exponent.");
+    console.log("Please enter base and exponent.");
 }

@@ -15,7 +15,8 @@ let number = parseInt(userInput);
 
 if (!isNaN(number) && number >= 0) {
     let result = computeFactorial(number);
-    console.log(`The factorial of ${number} is: ${result}`);
+    
+    console.log("The factorial of ", number, " is ", result)
 } else {
-    console.log("Please enter a valid non-negative number.");
+    console.log("Please enter positive number.");
 }
