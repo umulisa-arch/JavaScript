@@ -1,4 +1,5 @@
 let choice  = Number(prompt("Enter your choice: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"));
+let balance = 50000;
 switch(choice){
     case 1:
         alert("Send money");
@@ -10,11 +11,20 @@ switch(choice){
                 if(send==1){
                     let number =  Number(prompt("Numero ya mobile (Format 07XXXXXXXX)"));
                     let name = "Agnes RUKUNDO";
-                    alert("Emeza umubare w'amafaranga ajya kuri 25"+number+", "+name);
+                    alert("Emeza umubare w'amafaranga ajya kuri 250"+number+", "+name);
                     let amount =  Number(prompt("Enter amount"));
-                    let fee = (20/100)*amount;
-                    alert("washyizeho: "+name+","+"250"+number+","+amount+"RWF."+"ikiguzi cya RWF"+fee+"kirakurikizwa. Kwemeza shyiramo Pin");   
-                break;
+                    if (amount>balance){
+                        alert("Insufficient balance!");
+                    }
+                        else{
+                    
+                    let fee = (5/100)*amount;
+                    alert("washyizeho: "+name+","+"250"+number+","+amount+" RWF."+" ikiguzi cya RWF "+fee+" kirakurikizwa. Kwemeza shyiramo Pin"); 
+                    let pin =  Number(prompt("Enter your pin")); 
+                    balance= balance-(amount+fee);
+                    alert("*165*S*"+amount+"RWF"+ "transferred to "+name+" (250"+number+"). Fee was: "+fee+"RWF. New balance: "+balance);
+                }
+                    break;
                      }
                 case 2: 
                 alert("Ohereza eCash");
@@ -86,11 +96,7 @@ switch(choice){
         alert("help");
         break;
         
-        case 1:
-        alert("Send money");
-        break;
-        
-        case 1:
+        case 15:
         alert("Exit");
         break;
         default:
