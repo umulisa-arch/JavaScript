@@ -2,6 +2,29 @@ let choice  = Number(prompt("Enter your choice: 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 switch(choice){
     case 1:
         alert("Send money");
+        if(choice==1){
+            let choices = Number(prompt("Enter new choices: 1,2,3,4,5,6"));   
+            switch(choices){
+                case 1: 
+                alert("Uri Muri Momo");
+                break;
+                case 2: 
+                alert("Ohereza eCash");
+                break;
+                case 3: 
+                alert("Ohereza mu mahanga");
+                break;
+                case 4: 
+                alert("Tesha agaciro");
+                break;
+                case 5: 
+                alert("Erekana umubare gihamya");
+                break;
+                default:
+                    alert("Wahisemo nabi");
+            }
+        
+        }
         break;
         case 2:
         alert("Buy");
