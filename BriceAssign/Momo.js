@@ -7,6 +7,11 @@ switch(choice){
             switch(choices){
                 case 1: 
                 alert("Uri Muri Momo");
+                if(choices==1){
+                    let number =  Number(prompt("Numero ya mobile (Format 07XXXXXXXX)"));
+                    let name = "Agnes RUKUNDO";
+                    alert("Emeza umubare w'amafaranga ajya kuri 25"+number+", "+name);
+                }
                 break;
                 case 2: 
                 alert("Ohereza eCash");
