@@ -32,5 +32,8 @@ console.log(Math.min(20, 40, -20, 0));
 console.log(Math.trunc(200.8));
 console.log(Math.abs(-1)+Math.trunc(2.5));
 
+//random and floor
+console.log(Math.floor(Math.random() *12));
+
 
 
