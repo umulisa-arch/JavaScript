@@ -26,9 +26,10 @@ console.log(Math.random());// no need to put value in bracket
 //maximum
 console.log(Math.max(20, 30, 122, 250));
 //minimum
+console.log(Math.min(20, 40, -20, 0));
+
 //trunc
 console.log(Math.trunc(200.8));
-
 console.log(Math.abs(-1)+Math.trunc(2.5));
 
 
