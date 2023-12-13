@@ -3,16 +3,19 @@ switch(choice){
     case 1:
         alert("Send money");
         if(choice==1){
-            let choices = Number(prompt("Enter new choices: 1,2,3,4,5,6"));   
-            switch(choices){
+            let send = Number(prompt("Enter new choices: 1,2,3,4,5,6"));   
+            switch(send){
                 case 1: 
                 alert("Uri Muri Momo");
-                if(choices==1){
+                if(send==1){
                     let number =  Number(prompt("Numero ya mobile (Format 07XXXXXXXX)"));
                     let name = "Agnes RUKUNDO";
                     alert("Emeza umubare w'amafaranga ajya kuri 25"+number+", "+name);
-                }
+                    let amount =  Number(prompt("Enter amount"));
+                    let fee = (20/100)*amount;
+                    alert("washyizeho: "+name+","+"250"+number+","+amount+"RWF."+"ikiguzi cya RWF"+fee+"kirakurikizwa. Kwemeza shyiramo Pin");   
                 break;
+                     }
                 case 2: 
                 alert("Ohereza eCash");
                 break;
@@ -92,6 +95,5 @@ switch(choice){
         break;
         default:
             alert("Invalid input");
-        
-
+    
 }
