@@ -10,7 +10,12 @@ function deposit(){
         balance += amount;
 alert("Deposit amount: "+amount+ " Your balance is: "+balance)
     }
+    else{
+        
+        alert("Invalid input");
+    }
 }
+
 deposit();
 
 function withdraw(){
