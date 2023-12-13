@@ -1,0 +1,69 @@
+let choice  = Number(prompt("Enter your choice: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"));
+switch(choice){
+    case 1:
+        alert("Send money");
+        break;
+        case 2:
+        alert("Buy");
+        break;
+        
+        case 3:
+        alert("PayBill");
+        break;
+        
+        case 4:
+        alert("Bank Service");
+        break;
+        
+        case 5:
+        alert("Loan and Saving");
+        break;
+        
+        case 6:
+        alert("My Momo Account");
+        break;
+        
+        case 7:
+        alert("Pending Approvals");
+        break;
+        
+        case 8:
+        alert("MomoPay");
+        break;
+        
+        case 9:
+        alert("My Momo Security");
+        break;
+        
+        case 10:
+        alert("Insurance");
+        break;
+        
+        case 11:
+        alert("Momo Terms and Conditions");
+        break;
+        
+        case 12:
+        alert("Macye Macye");
+        break;
+        
+        case 13:
+        alert("Babyl health");
+        break;
+        
+        case 14:
+        alert("help");
+        break;
+        
+        case 1:
+        alert("Send money");
+        break;
+        
+        case 1:
+        alert("Exit");
+        break;
+        default:
+            alert("Invalid input");
+        
+
+}
