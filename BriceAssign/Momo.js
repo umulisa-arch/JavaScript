@@ -28,6 +28,7 @@ switch(choice){
                      }
                 case 2: 
                 alert("Ohereza eCash");
+                
                 break;
                 case 3: 
                 alert("Ohereza mu mahanga");
