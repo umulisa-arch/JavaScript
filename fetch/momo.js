@@ -1,0 +1,1 @@
+fetch(`https://proxy.momoapi.mtn.co.rw/collection/v1_0/account/balance`);
