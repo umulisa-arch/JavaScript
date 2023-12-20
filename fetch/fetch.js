@@ -1,8 +1,12 @@
  const newUser = {
-    name: 'Agnes',
-    job: 'Developer'
+    name: 'RUKUNDO',
+    job: 'IT'
  };
- fetch(`https://reqres.in/api/users`,{
+ const clickHandler = async()=>{
+    console.log("welcome in database");
+ }
+ btnEl.addEventListener('click', clickHandler);
+  await fetch(`https://reqres.in/api/users`,{
     method: 'POST',
     headers:{
 'Content-Type': 'application/json'
