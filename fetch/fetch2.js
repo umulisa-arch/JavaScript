@@ -1,16 +1,16 @@
-const btnEl = document.querySelector("..btn");
+const btnEl = document.querySelector(".btn");
 
 const newUser = {
    name: 'RUKUNDO',
    job: 'IT'
 };
-const clickHandler = async () =>{
+const clickHandler = async () => {
 try {
     const res = await fetch('https://reqres.in/api/users',{
         method: 'POST',
         headers:{
-            'content-Type': 'application'
-    }
+            'content-Type': 'application/json'
+    }, body: JSON.stringify(newUser)
 
     });
     const data = await res.json();
@@ -19,5 +19,6 @@ try {
     console.log(error);
 }
 }
+btnEl.addEventListener("click", clickHandler);
 
 
