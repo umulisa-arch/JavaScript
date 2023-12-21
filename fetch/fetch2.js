@@ -4,29 +4,20 @@ const newUser = {
    name: 'RUKUNDO',
    job: 'IT'
 };
-const clickHandler = async
+const clickHandler = async () =>{
 try {
     const res = await fetch('https://reqres.in/api/users',{
         method: 'POST',
         headers:{
+            'content-Type': 'application'
     }
 
-   
-'Content-Type': 'application/json'
-   },body: JSON.stringify(newUser)
-})
-.then(res =>{
-   if(!res.ok){
-       console.log("Problem occured");
-       return;
-   }
-   return res.json()
-})
+    });
+    const data = await res.json();
+    console.log(data);
+}catch (error){
+    console.log(error);
+}
+}
 
-.then(data => {
-   console.log("success");
-   // console.log(data.data[4].first_name, data.data[4].email, data.data[4].last_name);
-}).catch(error=>{
-   console.log(error);
-})
 
