@@ -11,7 +11,7 @@
         .then (data =>{
             for(let i = 0; i<data.length;i++){
                 // console.log(data[i].name)
-                document.querySelector('ul').insertAdjacentHTML("beforeend", `<li>${data[i].username}</li>`)
+                document.querySelector('ul').insertAdjacentHTML("beforeend", `<li>${data[i].name}</li>`)
             }
             
         })
