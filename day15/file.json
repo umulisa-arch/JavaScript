@@ -1,0 +1,11 @@
+[{
+    "fruits": "Apple",
+    "size": "large",
+    "color": "green"
+},
+{
+    "fruits": "Mango",
+    "size": "small",
+    "color": "yellow"
+}
+]

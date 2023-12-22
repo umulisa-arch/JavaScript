@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>List of fruits</h2>
+    <ul>
+    </ul>
+    <script >
+        const listEl = document.querySelector('ul')
+        
+    fetch('file.json')
+    .then(res => res.json())
+    .then (data =>{
+            data.forEach(post => {
+                // console.log(data[i].name)
+                listEl.insertAdjacentHTML('beforeend', `<li>${post.fruits}</li>`);
+            });
+            
+        });
+        
+        
+            
+
+    </script>
+</body>
+</html>
